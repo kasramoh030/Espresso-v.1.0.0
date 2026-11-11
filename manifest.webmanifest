@@ -1,0 +1,20 @@
+{
+  "name": "اسپرسو A1 — ایتالیایی درس‌به‌درس",
+  "short_name": "Espresso A1",
+  "description": "یادگیری ایتالیایی سطح A1 هم‌راستا با ۱۰ درس Nuovo Espresso 1: واژگان، اصطلاحات، مکالمه، گرامر، فلش‌کارت و آزمون با ترجمهٔ فارسی",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#150f0c",
+  "theme_color": "#150f0c",
+  "categories": ["education", "books"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
