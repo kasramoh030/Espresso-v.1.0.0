@@ -1,13 +1,8 @@
-/* Espresso A1 — service worker (offline app shell) */
-const CACHE = 'espresso-a1-v1-1';
+/* Espresso (A1+A2) v1.1.1 — service worker (offline app shell, single-file build) */
+const CACHE = 'espresso-a1a2-v111-1';
 const ASSETS = [
-  './', './index.html', './css/app.css', './js/ui.js', './js/native-tts.js', './js/spelling.js', './js/community.js', './js/ads-web-config.js', './js/ads-web.js', './js/ads.js', './js/bazaar.js', './js/app.js', './manifest.webmanifest',
-  './fonts/Vazirmatn-Regular.woff2', './fonts/Vazirmatn-Medium.woff2', './fonts/Vazirmatn-Bold.woff2',
-  './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png',
-  './data/lesson01.js', './data/lesson02.js', './data/lesson03.js', './data/lesson04.js', './data/lesson05.js',
-  './data/lesson06.js', './data/lesson07.js', './data/lesson08.js', './data/lesson09.js', './data/lesson10.js',
-  './data/reviews.js', './data/verbs.js', './data/sentences.js',
-  './js/sentences.js'
+  './', './index.html', './manifest.webmanifest',
+  './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'
 ];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()).catch(() => self.skipWaiting()));
